@@ -24,7 +24,8 @@ class PostContainer extends React.Component{
             post: {},
             setShow: false,
             show: false,
-            clicked: false
+            clicked: false,
+            user: null 
         }
     }
 
@@ -34,6 +35,7 @@ class PostContainer extends React.Component{
               type: "GET_USER",
               data
           });
+          getUser().then(data => this.setState({user: data}))
             getPost().then(data => this.props.dispatch({
                 type: 'GET_POSTS',
                 posts: data
@@ -67,7 +69,8 @@ class PostContainer extends React.Component{
     }
 
     isClicked=(e, post)=>{
-        const myId = this.props.user.user.id
+        const myId = this.state.user.user.id
+        console.log(myId)
          const id = post.id
          const comment = e.target.value
             const updatePost = this.state.posts.filter(p => p.id !== post.id)
