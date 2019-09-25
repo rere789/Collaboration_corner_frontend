@@ -41,7 +41,7 @@ class FormPage extends React.Component{
             } else{
                 alert("Incorrect Username and Password")
             }
-            console.log(data)
+            console.log(isUser)
         })
         // .then(this.props.fetchAllData())
     }
