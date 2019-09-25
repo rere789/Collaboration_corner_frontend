@@ -4,12 +4,11 @@ export function getUser(){
         method: 'GET',
         headers: {
             "Content-Type": "application/json",
-            "Accept":  "application/json", 
+            "accept":  "application/json", 
             "Authorization": 'bearer ' + localStorage.jwt
         }
     })
     .then(res => res.json())
-    // .then(console.log("ls", localStorage.jwt))
 }
 
 export function getPost(){

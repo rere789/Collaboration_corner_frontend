@@ -50,7 +50,7 @@ class Login extends React.Component{
             alert("Incorrect Username or Password")
           } else{
             localStorage.setItem("jwt", data.jwt)
-            
+            console.log("it worked", localStorage.jwt)
              this.props.history.push("/projects")
           } 
           // localStorage.setItem("token", data.jwt)

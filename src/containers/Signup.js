@@ -36,7 +36,7 @@ class FormPage extends React.Component{
         .then(res => res.json())
         .then(data =>{
             if(data.jwt){
-            LS.set('jwt', data.jwt)
+            localStorage.setItem("jwt", data.jwt)
             this.props.history.push("/projects")
             } else{
                 alert("Incorrect Username and Password")

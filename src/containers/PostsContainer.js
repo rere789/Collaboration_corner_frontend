@@ -35,13 +35,13 @@ class PostContainer extends React.Component{
               type: "GET_USER",
               data
           });
-          getUser().then(data => this.setState({user: data}))
+        //   getUser().then(data => this.setState({user: data})) 
             getPost().then(data => this.props.dispatch({
                 type: 'GET_POSTS',
                 posts: data
             }));
             getPost().then(data => this.setState({posts: data}))
-            })
+           
                 getCollaboration().then(data => {
                     this.props.dispatch({
                     type: "GET_COLLABORATION",
@@ -52,6 +52,7 @@ class PostContainer extends React.Component{
                         type: "GET_MYCOLLABORATIONS",
                         data
                         });
+                    })
                 })
         })
      }
