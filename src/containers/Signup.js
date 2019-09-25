@@ -39,7 +39,7 @@ class FormPage extends React.Component{
             localStorage.setItem("jwt", data.jwt)
             this.props.history.push("/projects")
             } else{
-                alert("Incorrect Username and Password")
+                alert("Username already exisit")
             }
             console.log(isUser)
         })
