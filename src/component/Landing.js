@@ -62,6 +62,7 @@ function Landing(){
       </div>
       <footer className="footer_landing"><h3>Thanks for visitng Collaboration Corner</h3>
       <p>Designed by Reina Ewing</p>
+      <p>Happy</p>
       </footer>
      
         </div>
