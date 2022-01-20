@@ -1,7 +1,9 @@
-# Collaboration Corner 
+# Welcome to Collaboration Corner 
+
+<img src="src/images/calab.png" />
 
 
-
+To see live example: http://sheltered-plateau-19975.herokuapp.com/
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
